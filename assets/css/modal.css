@@ -1,0 +1,109 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 64px);
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 44px;
+}
+
+.modal-header p {
+    margin-left: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.modal-body label {
+    display: block;
+}
+
+.modal-body input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.modal-body button {
+    border: none;
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.modal-body button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-footer {
+    font-size: 15px;
+    text-align: right;
+    margin-right: 16px;
+    margin: 16px;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-160px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

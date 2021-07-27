@@ -1,0 +1,124 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #slider .slider-img {
+        height: 100%;
+    }
+    
+    .content-section {
+        max-width: calc(100% - 32px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    #nav {
+        margin-top: 46px;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        display: none;
+    }
+    #nav.open {
+        display: block;
+    }
+    #nav li{
+        display: block;
+    }
+    .search-button {
+        display: none;
+    }
+    .menu-icon {
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        display: block;
+        color: #fff;
+        float: right;
+        line-height: 46px;
+        padding: 0 20px;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    #nav .subnav {
+        width: 100%;
+    }
+
+    #nav .subnav li {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    #nav .subnav a {
+        color: #fff;
+        display: block;
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+    #slider .slider-img {
+        height: 100%;
+    }
+    #slider .infor {
+        bottom: 16px;
+    }
+    #slider .infor .heading-infor {
+        font-size: 20px;
+    }
+    #slider .infor .title-infor {
+        font-size: 12px;
+        margin-top: 8px;
+        display: block;
+    }
+    .content-section {
+        max-width: calc(100% - 32px);
+    }
+    .food-item {
+        margin-top: 32px;
+    }
+    .food-item, .place-item {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .place-item {
+        margin-top: 16px;
+    }
+    .place-item .place-infor .place-name {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .place-item .place-infor .place-about {
+        min-height: 120px;
+    }
+
+    .contact-infor, .contact-fill, .send {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        padding: 16px 20px;
+    }
+
+    .contact-fill {
+        margin-top: 16px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .contact-fill .contact-form input {
+        padding: 12px;
+    }
+    .modal-close {
+        padding: 10px 16px;
+        font-size: 20px;
+    }
+}
